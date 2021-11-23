@@ -7,15 +7,40 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     paddingVertical: 10,
     paddingHorizontal: 20,
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  image: {
+    width: 80,
+    height: 80,
+    marginRight: 20,
   },
   name: {
-    fontSize: 20,
+    fontSize: 18,
     fontFamily: theme.fonts.title,
     color: theme.colors.text,
   },
-  image: {
-    width: 60,
-    height: 60,
-    marginRight: 20,
+  leftCard: {
+    flexDirection: 'row',
+  },
+  
+  data: {
+    justifyContent: "space-between",
+  },
+  species: {
+    fontSize: 16,
+    fontFamily: theme.fonts.text,
+    color: theme.colors.text,
+  },
+  status: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  statusText: {
+    fontSize: 12,
+    fontFamily: theme.fonts.text,
+    color: theme.colors.text,
+    marginLeft: 2,
+    marginBottom: 1
   }
 });

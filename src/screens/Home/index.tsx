@@ -21,7 +21,16 @@ export function Home() {
   useEffect(() => {
     setLoading(true);
     api.get('/character/?page=1').then(response => {
-      setCharacter(response.data.results);
+      const formatedResult = response.data.results.map((result: CharacterProps) => {
+        const translatedStatus = result.status === 'Alive' ? 'Vivo' : result.status === "Dead" ? 'Morto' : "Desconhecido";
+        const shortName = result.name.length > 20 ? result.name.substring(0, 20) + '...' : result.name;
+        return {
+          ...result,
+          name: shortName,
+          status: translatedStatus
+        }
+      })
+      setCharacter(formatedResult);
       setTimeout(() => {
         setLoading(false)
       }, 2000)
@@ -33,7 +42,7 @@ export function Home() {
       <View>
         {
           loading ?
-            <ActivityIndicator size="large" color={theme.colors.primary} /> :
+            <ActivityIndicator size="large" color={theme.colors.primary} style={{ marginTop: 10 }}/> :
             <FlatList
               style={styles.list}
               data={character}
