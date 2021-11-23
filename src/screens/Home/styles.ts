@@ -1,9 +1,13 @@
 import { StyleSheet } from 'react-native';
+import { theme } from '../../styles/theme';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    
+    backgroundColor: theme.colors.background,
+    paddingBottom: 20,
+  },
+  list: {
+    marginBottom: 100,
   }
 });

@@ -18,7 +18,7 @@ export function Header() {
   }
   return (
     <View style={styles.container}>
-      <PinkLogo width={50} height={50} />
+      <PinkLogo width={50} height={50}/>
       <Text style={styles.logo}>
         Rick and Morty
       </Text>
