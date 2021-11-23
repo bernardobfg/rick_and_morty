@@ -8,13 +8,9 @@ export const styles = StyleSheet.create({
     paddingBottom: 20,
   },
   content: {
+    flex: 1,
+    marginTop: 100,
     alignItems: 'center',
-  },
-  title: {
-    fontSize: 32,
-    marginBottom: 30,
-    fontFamily: theme.fonts.title,
-    color: theme.colors.title,
   },
   inputs: {
     marginVertical: 32,

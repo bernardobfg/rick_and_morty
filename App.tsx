@@ -3,7 +3,8 @@ import React from 'react';
 import AppLoading from 'expo-app-loading'
 import {useFonts} from 'expo-font'
 import { StyleSheet, Text, View } from 'react-native';
-import {Roboto_500Medium, Roboto_700Bold, Roboto_100Thin} from '@expo-google-fonts/roboto'
+import {Roboto_500Medium, Roboto_700Bold} from '@expo-google-fonts/roboto'
+import {PatrickHand_400Regular} from "@expo-google-fonts/patrick-hand"
 import { AuthProvider } from './src/contexts/auth';
 import { Routes } from './src/routes';
 
@@ -11,7 +12,7 @@ export default function App() {
   const [fontsLoaded] = useFonts({
     Roboto_500Medium,
     Roboto_700Bold,
-    Roboto_100Thin
+    PatrickHand_400Regular
     
   })
   if (!fontsLoaded) {
@@ -28,16 +29,3 @@ export default function App() {
     </AuthProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontFamily: 'Roboto_100Thin'
-  },
-  text: {
-    fontFamily: 'Roboto_700Bold'
-  }
-});

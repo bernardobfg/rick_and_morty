@@ -27,11 +27,13 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
     setTimeout(() => {
       setUser({ name: "Bernardo" })
       setToken(String(Math.random()))
+      setLoading(false)
     }, 2000)
   }
 
   const signOut = () => {
     setUser({} as User)
+    setToken('')
   }
 
   return (

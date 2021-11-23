@@ -10,6 +10,7 @@ export const theme = {
   fonts: {
     text: "Roboto_500Medium",
     title: "Roboto_700Bold",
+    logo: "PatrickHand_400Regular"
 
   }
 }

@@ -11,13 +11,8 @@ export function AppRoutes() {
   return (
     <Navigator
     screenOptions={{
-      headerShown: true,
+      headerShown: false,
       title:"",
-      headerStyle: {
-        backgroundColor: "transparent",
-        elevation: 0,
-        shadowOpacity: 0,
-      },
       cardStyle: {
         backgroundColor: theme.colors.background,
       },

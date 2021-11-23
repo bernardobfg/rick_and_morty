@@ -19,7 +19,6 @@ export function SignIn() {
   const [password, setPassword] = useState("")
 
   const handleSignIn = () => {
-    console.log("Sign")
     signIn()
   }
 
@@ -31,7 +30,6 @@ export function SignIn() {
       <ScrollView
         contentContainerStyle={styles.content}
       >
-        <Text style={styles.title}>Rick And Morty</Text>
         <Logo width={150} height={150} />
         <View style={styles.form}>
           <View style={styles.inputs}>
