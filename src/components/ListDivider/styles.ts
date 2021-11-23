@@ -1,0 +1,12 @@
+import { StyleSheet } from 'react-native';
+import { theme } from '../../styles/theme';
+
+export const styles = StyleSheet.create({
+  container: {
+    height: 1,
+    width: '90%',
+    backgroundColor: "#323232",
+    alignSelf: 'center',
+    marginVertical: 15,
+  }
+});

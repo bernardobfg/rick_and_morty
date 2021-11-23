@@ -31,7 +31,7 @@ export function CharacterCard({ id, name, image, species, status }: CharacterPro
           <Text style={styles.name}>{name}</Text>
           <Text style={styles.species}>{species}</Text>
           <View style={styles.status}>
-
+            
             {
               status === 'Vivo' ?
                 <AntDesign name="check" size={16} color="green" /> :
